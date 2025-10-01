@@ -16,3 +16,6 @@ require_relative '../app/services/rules/offer_red_widget_half_price'
 
 # Basket
 require_relative '../app/services/basket'
+
+# Catalog
+require_relative '../app/services/catalog'

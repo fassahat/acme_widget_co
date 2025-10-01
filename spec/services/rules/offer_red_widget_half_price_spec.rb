@@ -2,13 +2,6 @@
 
 require 'spec_helper'
 
-# Mock catalog so tests are self-contained
-module Catalog
-  PRODUCTS = {
-    'R01' => { name: 'Red Widget', price: 32.95 }
-  }.freeze
-end
-
 RSpec.describe OfferRedWidgetHalfPrice do
   subject(:rule) { described_class.new }
 

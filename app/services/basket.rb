@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-# app/services/basket.rb
+# Basket for total calculation
 class Basket
   def initialize(catalog:, delivery_rule:, offers: [])
     @catalog = catalog
@@ -24,6 +24,7 @@ class Basket
     end
 
     # Strategy: delivery charge depends on subtotal
-    subtotal + @delivery_rule.apply(subtotal)
+    delivery = @delivery_rule.apply(subtotal)
+    (subtotal + delivery).floor(2)
   end
 end
