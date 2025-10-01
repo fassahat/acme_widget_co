@@ -9,10 +9,10 @@ require 'byebug'
 # require_relative "../lib/product"
 
 # Rules
-require_relative "../app/services/rules/delivery_rule"
-require_relative "../app/services/rules/delivery_standard"
-require_relative "../app/services/rules/offer_rule"
-require_relative "../app/services/rules/offer_red_widget_half_price"
+require_relative '../app/services/rules/delivery_rule'
+require_relative '../app/services/rules/delivery_standard'
+require_relative '../app/services/rules/offer_rule'
+require_relative '../app/services/rules/offer_red_widget_half_price'
 
 # Basket
-require_relative "../app/services/basket"
+require_relative '../app/services/basket'
